@@ -1,8 +1,25 @@
-describe("calculateChange", () => {
-  test.todo("add calculateChange tests here");
+const calculateChange = require("../src/js/cart-functions");
+
+  describe("calculateChange", () => {
+  test("calculate difference between payment and total", () => {
+    expect(calculateChange(5,6)).toEqual(1);
+  });
 });
 
-describe("isSufficientPayment", () => {
+describe("calculateChange", () => {
+  test("calculate difference between payment and total", () => {
+    expect(calculateChange(12.30,13.03)).toEqual(0.73);
+  });
+});
+
+describe("calculateChange", () => {
+  test("calculate difference between payment and total", () => {
+    expect(calculateChange(9,12)).toEqual(3);
+  });
+});
+
+
+/*describe("isSufficientPayment", () => {
   test.todo("add isSufficientPayment tests here");
 });
 
@@ -16,4 +33,4 @@ describe("addItem", () => {
 
 describe("removeItem", () => {
   test.todo("add removeItem tests here");
-});
+})*/
