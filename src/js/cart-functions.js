@@ -9,4 +9,27 @@ function isSufficientPayment(total,payment) {
         return false;
     }
 }
-module.exports = {calculateChange,isSufficientPayment};
+
+function calculateTotal(itemsArray) {
+    itemsArray.push( {
+        name: "name",
+        price: price
+    })
+    for(let item of itemsArray) {
+        price += item.price;
+    }
+}
+
+function addItem(itemsArray,name,price) {
+    itemsArray.push( {
+        name : name,
+        price: price
+    })
+}
+
+function removeItem(itemsArray,index) {
+
+}
+
+
+module.exports = {calculateChange,isSufficientPayment,calculateTotal};
